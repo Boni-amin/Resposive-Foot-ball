@@ -1,0 +1,354 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    text-decoration: none;
+    list-style: none;
+}
+/* Common style */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1199px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.title{
+    font-weight: 700;
+    font-size: 64px;
+    color: black;
+    font-style: normal;
+}
+.p-text{
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    color: #6C6C6C;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 12px 18px;
+    background-color: #E02C6D;
+    border: none;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #E02C6D;
+}
+.bnt-focuse{
+    outline: 0;
+}
+.btn-bg:hover{
+    background-color: #2D25A0;
+    color: #fff;
+}
+/* ----Header start ------------- */
+header{
+    padding-top: 30px;
+}
+header, .banner{
+    background-color: #2D25A0;
+}
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+.menu ul li a, .nav-login a {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.menu ul li a{
+    margin: 0 20px;
+    position: relative;
+    font-size: 18px;
+}
+.menu ul li:first-child a{
+    margin-left: 0;
+}
+.menu ul li a::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #E02C6D;
+    transition: all 1s;
+}
+.menu ul li:hover a::before{
+    width: 100%;
+}
+.nav-login{
+    width: 143px;
+    height: 44px;
+    text-align: center;
+    background-color: #E02C6D;
+}
+.nav-login:hover{
+    background-color: #3DBAFD;
+
+}
+.nav-login a {
+    display: inline-flex;
+    margin-top: 10px
+}
+.nav-login a span{
+    margin-right: 10px;
+    font-size: 17px;
+}
+/* ----Header start end------------- */
+/* ----Banner start start------------- */
+.banner{
+    padding: 55px 0 80px 0;
+}
+.banner-iteam{
+    display: flex;
+}
+.banner-text h1{
+    color: #fff;
+    padding-right: 140px;
+    margin-bottom: 27px;
+}
+.banner-text span{
+    margin-left: 8px;;
+}
+.banner-img img{
+    width: 556px;
+    height: 438px;
+}
+/* ----player start start------------- */
+.foot-player, .heighlight{
+    padding: 70px 0;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.player{
+    /* width: 30%; */
+    padding: 15px;
+    /* border: 1px solid red; */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.player img{
+    width: 100%;
+}
+.player h3{
+    font-size: 28px;
+    margin: 5px 0 10px 0;
+    margin-right: 50px;
+}
+article p{
+    margin: 5px 0 15px 0;
+}
+
+/* ----player start end------------- */
+/* ----heighlight football start------------ */
+.heighlight{
+    background-color: #9bb4c260;
+}
+.heighlight-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heighlight-box{
+    width: 45%;
+}
+.heighlight-text h1{
+    font-size: 48px;
+}
+.heighlight-vido img{
+    width: 567px;
+    height: 427px;
+}
+/* ----heighlight football end------------ */
+/* ----News Latter start------------ */
+.newslatter{
+    padding: 110px 0 130px 0;
+}
+.news-title{
+    margin-bottom: 40px;
+}
+.news-title h1{
+    width: 224px;
+    margin: 0 auto;
+    font-size: 40px;
+    color: #E02C6D;
+    text-align: center;
+    position: relative;
+    
+}
+.news-title h1::before{
+    content: '';
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    top: 67px;
+    left: 50%;
+    background-color: #E02C6D;
+    transform: translate(-50%);
+}
+.news-title h1::after{
+    content: '';
+    width: 151px;
+    height: 3px;
+    position: absolute;
+    top: 57px;
+    left: 50%;
+    background-color: #E02C6D;
+    transform: translate(-50%);
+}
+.news-filds{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: flex-end;
+    width: 440px;
+    margin: 0 auto;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.news-filds input{
+    padding: 0px 10px;
+    font-size: 18px;
+    width: 284px;
+    border: 0;
+}
+.news-filds button{
+    padding: 17px 25px;
+    font-size: 20px;
+}
+/* ----News Latter end------------ */
+
+/* ----live play area end----------- */
+.live-play{
+    padding: 70px 0 120px 0;
+    background-color: #2D25A0;
+}
+.live-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 50px;
+}
+.live-text{
+    text-align: center;
+    width: 518px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.live-text h1, .live-text p{
+    color: #fff;
+    margin: 0;
+}
+.live-text h1{
+    font-size: 40px;
+}
+.live-match{
+    width: 260px;
+    height: 146px;
+    object-fit: cover;
+
+    position: relative;
+}
+.live-match img {
+    width: 100%;
+    height: 100%;
+}
+.live-match::before{
+    content: '';
+	width: 100%;
+	height: 100%;
+	background-color: #626262;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transform: scale(.4);
+	opacity: 0;
+	transition: all .4s
+}
+.live-match:hover::before{
+    transform: scale(.8);
+	opacity: .5;
+}
+.live-match h2{
+    font-size: 20px;
+    position: absolute;
+	width: 100%;
+	top: 75%;
+	left: 0;
+	text-align: center;
+	opacity: 0;
+	transition: all .4s;
+    color: black;
+}
+.live-match:hover h2{
+    opacity: 1;
+	top: 40%;
+    color: #fff;
+}
+.live-match h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+}
+/* ----live play area start----------- */
+/* ----footter area start----------- */
+.footer{
+    padding: 70px 0;
+    /* background-color: rgba(71, 53, 53, 0.404); */
+}
+.footer-area{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon ul{
+    display: flex;
+    padding-left: 0;
+}
+.footer-icon ul li {
+    text-align: center;
+    margin: 0 10px;
+}
+.footer-icon ul li a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: #E7E7E8;
+
+    /* font-size: 16px; */
+}
+.footer-icon ul li a:hover{
+    background-color: #2D25A0;
+    color: #fff;
+    transition: all .4s;
+
+}
+.footer-img img{
+    width: 480px;
+    height: 110px;
+}
+.copyright{
+    font-size: 18px;
+    margin: 0;
+}
+/* ----fo0tter area end----------- */
